@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="authenticated">
+<body>
 
   <div class="page-layout">
 
@@ -168,6 +168,20 @@
   <div id="error-overlay" class="error-overlay" hidden>
     <div class="error-box">
       <p id="error-message">Could not load the newsletter. Please check back later.</p>
+    </div>
+  </div>
+
+  <!-- Password Gate -->
+  <div id="password-gate" class="password-gate">
+    <div class="password-gate-box">
+      <img src="images/logos/default.png" alt="Bancroft ES" class="password-gate-logo">
+      <h1 class="password-gate-title">Bancroft ES</h1>
+      <p class="password-gate-subtitle">First Grade Newsletter / Boletín de Primer Grado</p>
+      <form id="password-form" class="password-form">
+        <input type="password" id="password-input" placeholder="Enter password / Contraseña" autocomplete="off" required>
+        <button type="submit">Enter</button>
+      </form>
+      <p id="password-error" class="password-error" hidden>Incorrect password / Contraseña incorrecta</p>
     </div>
   </div>
 

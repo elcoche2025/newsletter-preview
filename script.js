@@ -1,3 +1,54 @@
+// --- Password Gate ---
+const PASSWORD_HASH = '94eaf28af84472141155e36562ac0de59d5ae8a37c334dc8ad402a99b8c9bf6b';
+const AUTH_KEY = 'bancroft_auth';
+const AUTH_DAYS = 30;
+
+async function sha256(text) {
+  const data = new TextEncoder().encode(text);
+  const hash = await crypto.subtle.digest('SHA-256', data);
+  return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function isAuthenticated() {
+  const stored = localStorage.getItem(AUTH_KEY);
+  if (!stored) return false;
+  try {
+    const { hash, expires } = JSON.parse(stored);
+    if (Date.now() > expires) { localStorage.removeItem(AUTH_KEY); return false; }
+    return hash === PASSWORD_HASH;
+  } catch { localStorage.removeItem(AUTH_KEY); return false; }
+}
+
+function setupPasswordGate() {
+  if (isAuthenticated()) {
+    unlockSite();
+    return;
+  }
+
+  document.getElementById('password-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const input = document.getElementById('password-input');
+    const hash = await sha256(input.value);
+    if (hash === PASSWORD_HASH) {
+      localStorage.setItem(AUTH_KEY, JSON.stringify({
+        hash: PASSWORD_HASH,
+        expires: Date.now() + AUTH_DAYS * 24 * 60 * 60 * 1000
+      }));
+      unlockSite();
+    } else {
+      document.getElementById('password-error').hidden = false;
+      input.value = '';
+      input.focus();
+    }
+  });
+}
+
+function unlockSite() {
+  document.getElementById('password-gate').hidden = true;
+  document.body.classList.add('authenticated');
+  init();
+}
+
 // --- State ---
 let currentLang = 'es';
 let currentWeekData = null;
@@ -947,4 +998,4 @@ function showError(msg) {
 }
 
 // --- Start ---
-init();
+setupPasswordGate();
