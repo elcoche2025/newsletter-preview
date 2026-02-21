@@ -253,10 +253,11 @@ function renderDashboard() {
   const elapsedSchoolDays = countWeekdays(firstDay, effectiveToday, noSchoolDates);
   const remainingDays = Math.max(0, totalSchoolDays - elapsedSchoolDays);
 
-  // Week number
-  const weekIndex = weeksList.indexOf(currentWeekData.date);
-  const totalWeeks = weeksList.length;
-  const weekNum = totalWeeks - weekIndex;
+  // Week number (based on actual school calendar, not published newsletters)
+  const currentWeekDate = parseDate(currentWeekData.date);
+  const msPerWeek = 7 * 24 * 60 * 60 * 1000;
+  const weekNum = Math.max(1, Math.ceil((currentWeekDate - firstDay + msPerWeek) / msPerWeek));
+  const totalWeeks = Math.ceil((lastDay - firstDay + msPerWeek) / msPerWeek);
 
   // Upcoming dates (next 3 future dates from calendar)
   const upcomingDates = cal.dates
