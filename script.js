@@ -172,12 +172,10 @@ function render() {
 
   // Content sections
   document.getElementById('welcome-heading').textContent = labels.welcomeHeading;
-  document.getElementById('welcome-body').innerHTML = textToHTML(data.welcome[lang]) + renderImages(data.welcomeImages)
-    + shareableImageHTML('weekly-summary', labels.title + ' - ' + labels.subtitle);
+  document.getElementById('welcome-body').innerHTML = textToHTML(data.welcome[lang]) + renderImages(data.welcomeImages);
 
   document.getElementById('math-heading').textContent = labels.mathHeading;
-  document.getElementById('math-body').innerHTML = textToHTML(data.math[lang]) + renderImages(data.mathImages)
-    + shareableImageHTML('math-focus', labels.mathHeading);
+  document.getElementById('math-body').innerHTML = textToHTML(data.math[lang]) + renderImages(data.mathImages);
 
   document.getElementById('literacy-heading').textContent = labels.literacyHeading;
   document.getElementById('literacy-body').innerHTML = textToHTML(data.literacy[lang]) + renderImages(data.literacyImages);
@@ -343,7 +341,7 @@ function renderAskYourChild() {
       <span class="ask-bubble-icon">💬</span>
       <p>${escapeHTML(item[currentLang])}</p>
     </div>
-  `).join('') + shareableImageHTML('ask-your-child', labels.askHeading);
+  `).join('');
 }
 
 // ============================================================
@@ -418,7 +416,7 @@ function renderVocabulary() {
 
   body.innerHTML = `<div class="vocab-pills">
     ${data.vocabulary[currentLang].map(word => `<span class="vocab-pill">${escapeHTML(word)}</span>`).join('')}
-  </div>` + shareableImageHTML('vocabulary', labels.vocabHeading);
+  </div>`;
 }
 
 // ============================================================
@@ -461,10 +459,7 @@ function renderBooks() {
         ${questions}
       </div>
     </div>`;
-  }).join('')
-    + data.books.map((book, i) =>
-        shareableImageHTML(`book-${i + 1}`, book.title[lang] || book.title.en)
-      ).join('');
+  }).join('');
 }
 
 // ============================================================
@@ -993,50 +988,6 @@ function flagHTML(flagValue, size) {
     return `<img src="${src}" alt="flag" class="flag-img flag-${size}" style="height:${h}px;">`;
   }
   return `<span class="flag-emoji" style="font-size:${h}px;line-height:1;">${flagValue}</span>`;
-}
-
-// --- Shareable Image Card ---
-function shareableImageHTML(imageName, label) {
-  const src = `images/weekly/${imageName}-${currentLang}.png`;
-  const downloadName = `bancroft-${imageName}-${currentWeekData.date}.png`;
-  const shareLabel = currentLang === 'es' ? 'Compartir' : 'Share';
-  const saveLabel = currentLang === 'es' ? 'Guardar' : 'Save';
-  const cardLabel = currentLang === 'es' ? 'Imagen para compartir' : 'Shareable image';
-
-  return `<div class="shareable-image-wrap">
-    <img src="${src}" alt="${label}" loading="lazy" onclick="window.open(this.src, '_blank')">
-    <div class="shareable-image-actions">
-      <span class="shareable-image-label">${cardLabel}</span>
-      <div class="shareable-image-btns">
-        <button class="shareable-image-btn" onclick="downloadShareImage('${src}', '${downloadName}')">${saveLabel} 📥</button>
-        <button class="shareable-image-btn" onclick="shareImage('${src}', '${escapeAttr(label)}')">${shareLabel} 📤</button>
-      </div>
-    </div>
-  </div>`;
-}
-
-function downloadShareImage(src, filename) {
-  const a = document.createElement('a');
-  a.href = src;
-  a.download = filename;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
-
-async function shareImage(src, title) {
-  try {
-    const res = await fetch(src);
-    const blob = await res.blob();
-    const file = new File([blob], 'bancroft-newsletter.png', { type: 'image/png' });
-    if (navigator.canShare && navigator.canShare({ files: [file] })) {
-      await navigator.share({ title, files: [file] });
-    } else if (navigator.share) {
-      await navigator.share({ title, url: window.location.href });
-    } else {
-      downloadShareImage(src, 'bancroft-newsletter.png');
-    }
-  } catch (e) { /* user cancelled */ }
 }
 
 function showError(msg) {
