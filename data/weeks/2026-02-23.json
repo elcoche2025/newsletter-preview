@@ -1,0 +1,111 @@
+{
+  "date": "2026-02-23",
+  "season": "bancroft",
+  "welcome": {
+    "en": "This Thursday, February 26, we are inviting parents to share family traditions with our students. We encourage you to bring food, traditional clothing, a favorite read-aloud, pictures, or special objects that represent your traditions. Please reach out to your homeroom teacher if you are interested in participating.",
+    "es": "Este jueves 26 de febrero, invitamos a los padres a compartir las tradiciones familiares con nuestros estudiantes. Les animamos a traer comida, vestimenta tradicional, un cuento favorito para leer en voz alta, fotos u objetos especiales que representen sus tradiciones. Por favor, comuníquense con el maestro(a) de su salón de clases si están interesados en participar."
+  },
+  "math": {
+    "en": "In Math, this week your student is learning to measure and compare lengths. They use tools to find how long or tall something is from one end of it to the other end. At home, please help your student develop good measuring behaviors by asking questions about objects around the house. For example:\n\n• \"If we were going to measure this table, where would we start measuring?\"\n• \"Where would we stop measuring?\"\n• \"What do we call the space between the endpoints of the table?\"",
+    "es": "En matemáticas, esta semana su estudiante está aprendiendo a medir y comparar longitudes. Usan herramientas para determinar qué tan largo o alto es algo, desde un extremo hasta el otro. En casa, por favor ayude a su hijo/a a desarrollar buenos hábitos de medición haciendo preguntas sobre objetos en el hogar. Por ejemplo:\n\n• «Si fuéramos a medir esta mesa, ¿dónde empezaríamos a medir?»\n• «¿Dónde dejaríamos de medir?»\n• «¿Cómo llamamos al espacio entre los extremos de la mesa?»"
+  },
+  "literacy": {
+    "en": "In Spanish, we will read two new family stories. We will practice reading comprehension and learn to retell a story, including all its elements (characters, settings, events, and lesson or message). In word study, we will work with verb endings –aría, -ería, -iría, –ara, -iera. At home, you can practice dividing words into syllables, and reading and writing sentences using words such as: hablar, hablaría, hablarían, comer, comería, comerías.\n\nIn ELA we are continuing to practice words with digraphs. Digraphs are two letters that make one sound. Keep practicing your heart words at home! In ARC we are continuing to write our Small Moments. Continue to talk to your student about feelings and the 5 senses.",
+    "es": "En español vamos a leer dos nuevas historias de familia. Practicaremos comprensión de lectura y aprenderemos a recontar una historia, incluyendo todos los elementos (personajes, escenarios, eventos y lección o mensaje). En estudio de palabras, trabajaremos con terminaciones de verbos en –aría, -ería, -iría, –ara, -iera. En casa, pueden practicar a dividir en sílabas, leer y escribir oraciones usando palabras como: hablar, hablaría, hablarían, comer, comería, comerías.\n\nEn ELA continuamos practicando palabras con dígrafos. Los dígrafos son dos letras que forman un solo sonido. ¡Sigan practicando las palabras esenciales (heart words) en casa! En ARC, continuamos escribiendo nuestros Momentos Pequeños. Continúen hablando con su estudiante sobre los sentimientos y los cinco sentidos."
+  },
+  "specials": {
+    "monday": "B",
+    "tuesday": "C",
+    "wednesday": "D",
+    "thursday": "E",
+    "friday": "F"
+  },
+  "roars": {
+    "Cartagena": "Nicholas D.",
+    "Colombia": "Santiago S.",
+    "España": "Johnny P.",
+    "DR": "Eleanor R.",
+    "Managua": "Pablo S.",
+    "Venezuela": "Kieran P."
+  },
+
+  "reminders": [
+    {
+      "date": "2026-02-26",
+      "en": "Family Traditions Day - Thursday! Bring food, traditional clothing, photos, or special objects that represent your family traditions. Contact your homeroom teacher to participate.",
+      "es": "Día de Tradiciones Familiares - ¡Jueves! Traigan comida, vestimenta tradicional, fotos u objetos especiales que representen sus tradiciones familiares. Comuníquense con el maestro(a) de su salón para participar."
+    },
+    {
+      "date": "2026-03-12",
+      "en": "Conference reports will be sent home (PTC canceled due to snow days - regular school day)",
+      "es": "Los informes de conferencia se enviarán a casa (Conferencias canceladas por días de nieve - día escolar regular)"
+    }
+  ],
+
+  "askYourChild": [
+    {
+      "en": "What did you measure today and how long was it?",
+      "es": "¿Qué mediste hoy y qué tan largo era?"
+    },
+    {
+      "en": "Can you retell the family story we read in class? Who were the characters?",
+      "es": "¿Puedes recontar la historia de familia que leímos en clase? ¿Quiénes eran los personajes?"
+    },
+    {
+      "en": "What are digraphs? Can you show me a word with one?",
+      "es": "¿Qué son los dígrafos? ¿Puedes mostrarme una palabra con uno?"
+    },
+    {
+      "en": "Tell me about the 'Small Moment' you wrote about today. What feelings did you include?",
+      "es": "Cuéntame sobre el 'Momento Pequeño' que escribiste hoy. ¿Qué sentimientos incluiste?"
+    }
+  ],
+
+  "vocabulary": {
+    "en": ["measure", "length", "endpoint", "digraph", "retell", "character", "setting", "syllable"],
+    "es": ["medir", "longitud", "extremo", "dígrafo", "recontar", "personaje", "escenario", "sílaba"]
+  },
+
+  "books": [
+    {
+      "title": {
+        "en": "Those Shoes",
+        "es": "Esos Zapatos"
+      },
+      "author": "Maribeth Boelts",
+      "youtubeUrl": "https://www.youtube.com/watch?v=H6IAOeOhqU4",
+      "questions": [
+        { "en": "What did Jeremy want more than anything?", "es": "¿Qué quería Jeremy más que nada?" },
+        { "en": "How did Jeremy feel when he gave his shoes to Antonio?", "es": "¿Cómo se sintió Jeremy cuando le dio sus zapatos a Antonio?" },
+        { "en": "What is the difference between what we want and what we need?", "es": "¿Cuál es la diferencia entre lo que queremos y lo que necesitamos?" }
+      ]
+    },
+    {
+      "title": {
+        "en": "The Name Jar",
+        "es": "El Frasco de los Nombres"
+      },
+      "author": "Yangsook Choi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EBLRmGxYMgw",
+      "questions": [
+        { "en": "Why did Unhei not want to tell the class her name at first?", "es": "¿Por qué Unhei no quería decirle su nombre a la clase al principio?" },
+        { "en": "What does your name mean to you and your family?", "es": "¿Qué significa tu nombre para ti y tu familia?" }
+      ]
+    }
+  ],
+
+  "mathDetails": {
+    "module": {
+      "en": "Module 4: Ordering and Comparing Length Measurements",
+      "es": "Módulo 4: Ordenar y Comparar Medidas de Longitud"
+    },
+    "topic": {
+      "en": "Topic C: Measure and Compare",
+      "es": "Tema C: Medir y Comparar"
+    },
+    "lesson": {
+      "en": "Lessons 10-12",
+      "es": "Lecciones 10-12"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schoolYear": "2025-2026",
+  "firstDay": "2025-08-25",
+  "lastDay": "2026-06-17",
+  "calendarPdfUrl": "https://dcps.dc.gov/sites/default/files/dc/sites/dcps/publication/attachments/SY%2025-26%20Calendar%20Final_03202024_English.pdf",
+  "terms": [
+    { "term": 1, "start": "2025-08-25", "end": "2025-10-31", "days": 46 },
+    { "term": 2, "start": "2025-11-04", "end": "2026-01-23", "days": 44 },
+    { "term": 3, "start": "2026-01-27", "end": "2026-04-03", "days": 45 },
+    { "term": 4, "start": "2026-04-07", "end": "2026-06-17", "days": 45 }
+  ],
+  "breaks": [
+    { "start": "2025-11-26", "end": "2025-11-28", "en": "Thanksgiving Recess", "es": "Receso de Acción de Gracias" },
+    { "start": "2025-12-22", "end": "2026-01-01", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "start": "2026-04-13", "end": "2026-04-17", "en": "Spring Recess", "es": "Receso de Primavera" }
+  ],
+  "dates": [
+    { "date": "2025-09-01", "type": "HOL", "en": "Labor Day", "es": "Día del Trabajo" },
+    { "date": "2025-09-22", "type": "NS", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2025-09-23", "type": "NS", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2025-09-24", "type": "NS", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2025-09-25", "type": "NS", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2025-09-26", "type": "NS", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2025-10-09", "type": "PTC", "en": "Parent-Teacher Conferences (No School for Students)", "es": "Conferencias de Padres y Maestros (No Hay Clases)" },
+    { "date": "2025-10-10", "type": "PD", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2025-10-13", "type": "HOL", "en": "Indigenous Peoples' Day", "es": "Día de los Pueblos Indígenas" },
+    { "date": "2025-11-03", "type": "NS", "en": "End of Term / Records Day", "es": "Fin de Período / Día de Registros" },
+    { "date": "2025-11-11", "type": "HOL", "en": "Veterans Day", "es": "Día de los Veteranos" },
+    { "date": "2025-11-26", "type": "NS", "en": "Thanksgiving Recess", "es": "Receso de Acción de Gracias" },
+    { "date": "2025-11-27", "type": "HOL", "en": "Thanksgiving Recess", "es": "Receso de Acción de Gracias" },
+    { "date": "2025-11-28", "type": "NS", "en": "Thanksgiving Recess", "es": "Receso de Acción de Gracias" },
+    { "date": "2025-12-22", "type": "NS", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "date": "2025-12-23", "type": "NS", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "date": "2025-12-24", "type": "NS", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "date": "2025-12-25", "type": "HOL", "en": "Christmas Day", "es": "Navidad" },
+    { "date": "2025-12-26", "type": "NS", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "date": "2025-12-29", "type": "NS", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "date": "2025-12-30", "type": "NS", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "date": "2025-12-31", "type": "NS", "en": "Winter Recess", "es": "Receso de Invierno" },
+    { "date": "2026-01-01", "type": "HOL", "en": "New Year's Day", "es": "Año Nuevo" },
+    { "date": "2026-01-02", "type": "PD", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2026-01-19", "type": "HOL", "en": "Martin Luther King Jr. Day", "es": "Día de Martin Luther King Jr." },
+    { "date": "2026-01-26", "type": "NS", "en": "End of Term / Records Day", "es": "Fin de Período / Día de Registros" },
+    { "date": "2026-02-13", "type": "PD", "en": "Professional Development Day", "es": "Día de Desarrollo Profesional" },
+    { "date": "2026-02-16", "type": "HOL", "en": "Presidents' Day", "es": "Día de los Presidentes" },
+    { "date": "2026-04-06", "type": "NS", "en": "End of Term / Records Day", "es": "Fin de Período / Día de Registros" },
+    { "date": "2026-04-13", "type": "NS", "en": "Spring Recess", "es": "Receso de Primavera" },
+    { "date": "2026-04-14", "type": "NS", "en": "Spring Recess", "es": "Receso de Primavera" },
+    { "date": "2026-04-15", "type": "NS", "en": "Spring Recess", "es": "Receso de Primavera" },
+    { "date": "2026-04-16", "type": "HOL", "en": "Spring Recess", "es": "Receso de Primavera" },
+    { "date": "2026-04-17", "type": "NS", "en": "Spring Recess", "es": "Receso de Primavera" },
+    { "date": "2026-05-25", "type": "HOL", "en": "Memorial Day", "es": "Día de los Caídos" },
+    { "date": "2026-06-17", "type": "END", "en": "Last Day of School", "es": "Último Día de Clases" },
+    { "date": "2026-06-18", "type": "NS", "en": "Records / PD Day", "es": "Día de Registros / Desarrollo Profesional" },
+    { "date": "2026-06-19", "type": "HOL", "en": "Juneteenth", "es": "Juneteenth" }
+  ],
+  "typeLabels": {
+    "en": { "HOL": "Holiday", "PD": "PD Day", "PTC": "Conferences", "NS": "No School", "END": "Last Day" },
+    "es": { "HOL": "Feriado", "PD": "Día PD", "PTC": "Conferencias", "NS": "No Hay Clases", "END": "Último Día" }
+  }
+}

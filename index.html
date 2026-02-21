@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Bancroft ES - First Grade Newsletter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="authenticated">
+
+  <div class="page-layout">
+
+    <!-- Archive Sidebar (desktop) -->
+    <aside id="archive-sidebar" class="archive-sidebar">
+      <h3 id="archive-heading">Past Newsletters</h3>
+      <ul id="archive-list"></ul>
+    </aside>
+
+    <!-- Newsletter Content -->
+    <main id="newsletter">
+
+      <!-- Header -->
+      <header class="newsletter-header">
+        <img id="school-logo" src="" alt="Bancroft ES Logo" class="school-logo">
+        <div class="header-text">
+          <h1 id="title" class="script-font">Primer Grado</h1>
+          <h2 id="subtitle">Boletín Semanal</h2>
+          <p id="date-display" class="script-font"></p>
+        </div>
+        <div class="header-right">
+          <div class="header-actions">
+            <button id="print-btn" class="header-action-btn" title="Print">🖨️</button>
+            <button id="share-btn" class="header-action-btn" title="Share">🔗</button>
+            <button id="dark-mode-btn" class="header-action-btn" title="Dark Mode">🌙</button>
+          </div>
+          <div class="lang-toggle-wrap" id="lang-toggle-wrap">
+            <button class="lang-btn" data-lang="es">Español</button>
+            <button class="lang-btn" data-lang="en">English</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Quick Links Bar -->
+      <nav id="quick-links" class="quick-links-bar"></nav>
+
+      <!-- Class Selector -->
+      <section class="class-selector-bar">
+        <label id="class-selector-label" for="class-select">Mi Salón:</label>
+        <div class="class-selector-buttons" id="class-selector-buttons">
+          <button class="class-btn" data-class="">All</button>
+        </div>
+      </section>
+
+      <!-- Dashboard / At a Glance -->
+      <section id="dashboard" class="section dashboard-section">
+        <div class="section-heading-wrap">
+          <h3 id="dashboard-heading" class="dashboard-heading">El Año Escolar de un Vistazo</h3>
+        </div>
+        <div id="dashboard-body" class="dashboard-body"></div>
+      </section>
+
+      <!-- My Specials This Week (shown when a class is selected) -->
+      <section id="my-specials" class="section my-specials-section" hidden>
+        <div class="section-heading-wrap">
+          <h3 id="my-specials-heading" class="specials-heading">My Specials This Week</h3>
+        </div>
+        <div id="my-specials-body" class="my-specials-body"></div>
+      </section>
+
+      <!-- Welcome -->
+      <section class="section welcome-section">
+        <div class="section-heading-wrap">
+          <h3 id="welcome-heading" class="welcome-heading">Hello 1st Grade Families!</h3>
+        </div>
+        <div id="welcome-body" class="section-body"></div>
+      </section>
+
+      <!-- Important Reminders -->
+      <section id="reminders" class="section reminders-section" hidden>
+        <div class="section-heading-wrap">
+          <h3 id="reminders-heading" class="reminders-heading">Important Reminders</h3>
+        </div>
+        <div id="reminders-body" class="reminders-body"></div>
+      </section>
+
+      <!-- Math News -->
+      <section class="section math-section">
+        <div class="section-heading-wrap">
+          <h3 id="math-heading" class="math-heading">Math News</h3>
+        </div>
+        <div id="math-body" class="section-body"></div>
+      </section>
+
+      <!-- Literacy News -->
+      <section class="section literacy-section">
+        <div class="section-heading-wrap">
+          <h3 id="literacy-heading" class="literacy-heading">Literacy News</h3>
+        </div>
+        <div id="literacy-body" class="section-body"></div>
+      </section>
+
+      <!-- Ask Your Child About... -->
+      <section id="ask-your-child" class="section ask-section" hidden>
+        <div class="section-heading-wrap">
+          <h3 id="ask-heading" class="ask-heading">Ask Your Child About...</h3>
+        </div>
+        <div id="ask-body" class="ask-body"></div>
+      </section>
+
+      <!-- Vocabulary / Words of the Week -->
+      <section id="vocabulary" class="section vocab-section" hidden>
+        <div class="section-heading-wrap">
+          <h3 id="vocab-heading" class="vocab-heading">Words of the Week</h3>
+        </div>
+        <div id="vocab-body" class="vocab-body"></div>
+      </section>
+
+      <!-- Books & Read-Alouds -->
+      <section id="books" class="section books-section" hidden>
+        <div class="section-heading-wrap">
+          <h3 id="books-heading" class="books-heading">Books & Read-Alouds</h3>
+        </div>
+        <div id="books-body" class="books-body"></div>
+      </section>
+
+      <!-- Specials Schedule -->
+      <section class="section specials-section">
+        <div class="section-heading-wrap">
+          <h3 id="specials-heading" class="specials-heading">Specials Schedule</h3>
+        </div>
+        <table id="specials-table" class="specials-table">
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <!-- Classroom Rotation Grids -->
+      <div id="classroom-grids" class="classroom-grids"></div>
+
+      <!-- ROARS -->
+      <section class="section roars-section">
+        <div class="roars-header">
+          <span class="tiger-emoji">🐯</span>
+          <h3 id="roars-heading" class="roars-heading">ROARS</h3>
+          <span class="tiger-emoji">🐯</span>
+        </div>
+        <div id="roars-cards" class="roars-cards"></div>
+      </section>
+
+      <!-- Mobile Archive -->
+      <section class="section archive-mobile">
+        <details>
+          <summary id="archive-heading-mobile">Past Newsletters</summary>
+          <ul id="archive-list-mobile"></ul>
+        </details>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Error overlay -->
+  <div id="error-overlay" class="error-overlay" hidden>
+    <div class="error-box">
+      <p id="error-message">Could not load the newsletter. Please check back later.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
