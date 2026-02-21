@@ -688,8 +688,8 @@ async function renderSpecials(specials, labels) {
     const weatherHTML = weatherSnippetHTML(daily, i, currentLang);
 
     return `<tr>
-      <td>${labels.days[i]} <span class="specials-date">(${shortDate})</span></td>
-      <td${cellClass}>${displayVal}${weatherHTML ? '<div class="specials-weather-row">' + weatherHTML + '</div>' : ''}</td>
+      <td>${labels.days[i]} <span class="specials-date">(${shortDate})</span>${weatherHTML ? '<div class="specials-weather-row">' + weatherHTML + '</div>' : ''}</td>
+      <td${cellClass}>${displayVal}</td>
     </tr>`;
   }).join('');
 }

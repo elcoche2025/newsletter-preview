@@ -111,7 +111,7 @@
       "welcomeHeading": "¡Hola familias de primer grado!",
       "mathHeading": "Noticias de Matemáticas",
       "literacyHeading": "Noticias de Lectura y Escritura",
-      "specialsHeading": "Horario de Especialidades",
+      "specialsHeading": "Horario de Especiales",
       "roarsHeading": "ROARS",
       "archiveHeading": "Boletines Anteriores",
       "weekOf": "Semana del",
@@ -134,7 +134,7 @@
       "mathDetailsTopic": "Tema",
       "mathDetailsLesson": "Lección",
       "linkCopied": "¡Enlace copiado!",
-      "mySpecialsHeading": "Especialidades de Esta Semana"
+      "mySpecialsHeading": "Especiales de Esta Semana"
     }
   }
 }
