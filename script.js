@@ -224,8 +224,6 @@ function renderDashboard() {
   const labels = configData.labels[lang];
   const cal = calendarData;
 
-  document.getElementById('dashboard-heading').textContent = labels.dashboardHeading;
-
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 

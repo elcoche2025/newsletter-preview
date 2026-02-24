@@ -215,21 +215,21 @@ body {
 
 /* ===== Quick Links Bar ===== */
 .quick-links-bar {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
   padding: 0.6rem 1rem;
   background: var(--color-white);
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   margin-bottom: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
   transition: background 0.3s;
 }
 
 .quick-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem;
   padding: 0.4rem 0.9rem;
   background: #e8ecf1;
@@ -257,10 +257,6 @@ body {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
   transition: background 0.3s;
 }
 
@@ -269,12 +265,14 @@ body {
   font-size: 1.1rem;
   color: var(--color-text);
   white-space: nowrap;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .class-selector-buttons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.4rem;
-  flex-wrap: wrap;
 }
 
 .class-btn {
@@ -307,18 +305,8 @@ body {
   transition: background 0.3s;
 }
 
-.dashboard-heading {
-  font-family: var(--font-script);
-  font-size: 1.5rem;
-  background: var(--color-literacy-heading);
-  display: inline-block;
-  padding: 0.2rem 1.5rem;
-  border-radius: 24px;
-  color: white;
-}
-
 .dashboard-body {
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 
 .dashboard-stats {
@@ -1394,6 +1382,15 @@ body.dark-mode .ics-btn:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .quick-links-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .class-selector-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 480px) {
   .classroom-grids {
     grid-template-columns: 1fr;
@@ -1407,6 +1404,9 @@ body.dark-mode .ics-btn:hover {
   .quick-link {
     font-size: 0.75rem;
     padding: 0.3rem 0.6rem;
+  }
+  .class-selector-buttons {
+    grid-template-columns: repeat(2, 1fr);
   }
   .dashboard-upcoming-item {
     font-size: 0.8rem;
